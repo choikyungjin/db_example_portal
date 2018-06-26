@@ -8,8 +8,8 @@
 	Class.forName("oracle.jdbc.driver.OracleDriver");
 	
 	String url = "jdbc:oracle:thin:@localhost:1521:xe";
-	String id = "test";
-	String pass = "test";
+	String id = "";
+	String pass = "";
 	String name = request.getParameter("name");
 	String password = request.getParameter("password");
 	String title = request.getParameter("title");
@@ -30,7 +30,7 @@
 			total = rs.getInt(1);
 		}
 		rs.close();
-		out.print("ÃÑ °Ô½Ã¹° : " + total + "°³");
+		out.print("ì´ ê²Œì‹œë¬¼ : " + total + "ê°œ");
 		
 		
 		String sql = "INSERT INTO kboard(num,USERNAME,PASSWORD,TITLE,MEMO) VALUES(?,?,?,?,?)";
@@ -51,7 +51,7 @@
 	}
 %>
   <script language=javascript>
-   self.window.alert("ÀÔ·ÂÇÑ ±ÛÀ» ÀúÀåÇÏ¿´½À´Ï´Ù.");
+   self.window.alert("ì…ë ¥í•œ ê¸€ì„ ì €ì¥í•˜ì˜€ìŠµë‹ˆë‹¤.");
    location.href="list.jsp"; 
 
 </script>
