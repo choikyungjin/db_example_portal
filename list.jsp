@@ -4,14 +4,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
  <head>
- <title>°Ô½ÃÆÇ</title>
+ <title>ê²Œì‹œíŒ</title>
  </head>
  <body>
  <%
 	Class.forName("oracle.jdbc.driver.OracleDriver");
 	String url = "jdbc:oracle:thin:@localhost:1521:xe";
-	String id = "test";
-	String pass = "test";
+	String id = "";
+	String pass = "";
 	int total = 0;
 	
 	try {
@@ -39,10 +39,10 @@
 			style="background: url('images/table_mid.gif') repeat-x; text-align: center;">
 			<td width="5"><img src="images/table_left.gif" width="5"
 				height="30" /></td>
-			<td width="30">¹øÈ£</td>
-			<td width="379">Á¦¸ñ</td>
-			<td width="73">ÀÛ¼ºÀÚ</td>
-			<td width="58">Á¶È¸¼ö</td>
+			<td width="30">ë²ˆí˜¸</td>
+			<td width="379">ì œëª©</td>
+			<td width="73">ìž‘ì„±ìž</td>
+			<td width="58">ì¡°íšŒìˆ˜</td>
 			<td width="7"><img src="images/table_right.gif" width="5"
 				height="30" /></td>
 		</tr>
@@ -50,7 +50,7 @@
 	if(total==0) {
 %>
 		<tr align="center" bgcolor="#FFFFFF" height="30">
-			<td colspan="6">µî·ÏµÈ ±ÛÀÌ ¾ø½À´Ï´Ù.</td>
+			<td colspan="6">ë“±ë¡ëœ ê¸€ì´ ì—†ìŠµë‹ˆë‹¤.</td>
 		</tr>
 		<%
 	 	} else {
@@ -93,7 +93,7 @@
 			<td colspan="4" height="5"></td>
 		</tr>
 		<tr align="center">
-			<td><input type=button value="±Û¾²±â" OnClick="window.location='write.jsp'"></td>
+			<td><input type=button value="ê¸€ì“°ê¸°" OnClick="window.location='write.jsp'"></td>
 		</tr>
 	</table>
 </body>
