@@ -6,8 +6,8 @@
 	request.setCharacterEncoding("euc-kr");
 	Class.forName("oracle.jdbc.driver.OracleDriver");
 	String url = "jdbc:oracle:thin:@localhost:1521:xe";
-	String id = "test";
-	String pass = "test";
+	String id = "";
+	String pass = "";
 	String password = null;
 	int idx = Integer.parseInt(request.getParameter("idx"));
 	String passw = request.getParameter("password");
@@ -30,7 +30,7 @@
 			stmt.executeUpdate(sql);	 
 %>
   			<script language=javascript>
-   				self.window.alert("ÇØ´ç ±ÛÀ» »èÁ¦ÇÏ¿´½À´Ï´Ù.");
+   				self.window.alert("í•´ë‹¹ ê¸€ì„ ì‚­ì œí•˜ì˜€ìŠµë‹ˆë‹¤.");
    				location.href="list.jsp";
   			</script>
 
@@ -42,7 +42,7 @@
 		 } else { 
 %>
 			<script language=javascript>
-			 self.window.alert("ºñ¹Ğ¹øÈ£¸¦ Æ²·È½À´Ï´Ù.");
+			 self.window.alert("ë¹„ë°€ë²ˆí˜¸ë¥¼ í‹€ë ¸ìŠµë‹ˆë‹¤.");
 				location.href="javascript:history.back()";
 			</script>
 <%		
