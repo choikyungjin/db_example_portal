@@ -4,8 +4,8 @@
 <%
 	Class.forName("oracle.jdbc.driver.OracleDriver");
 	String url = "jdbc:oracle:thin:@localhost:1521:orcl";
-	String id = "test";
-	String pass = "test";
+	String id = "";
+	String pass = "";
 	int idx = Integer.parseInt(request.getParameter("idx"));
 
 	try {
@@ -25,7 +25,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>°Ô½ÃÆÇ</title>
+<title>ê²Œì‹œíŒ</title>
 </head>
 <body>
 <div><a href="index.jsp"><img src="images/kw_logo.jpg"></a></div>
@@ -37,7 +37,7 @@
 						style="background: url('images/table_mid.gif') repeat-x; text-align: center;">
 						<td width="5"><img src="images/table_left.gif" width="5"
 							height="30" /></td>
-						<td>³» ¿ë</td>
+						<td>ë‚´ ìš©</td>
 						<td width="5"><img src="images/table_right.gif" width="5"
 							height="30" /></td>
 					</tr>
@@ -45,7 +45,7 @@
 				<table width="413">
 					<tr>
 						<td width="0">&nbsp;</td>
-						<td align="center" width="76">±Û¹øÈ£</td>
+						<td align="center" width="76">ê¸€ë²ˆí˜¸</td>
 						<td width="319"><%=idx%></td>
 						<td width="0">&nbsp;</td>
 					</tr>
@@ -54,7 +54,7 @@
 					</tr>
 					<tr>
 						<td width="0">&nbsp;</td>
-						<td align="center" width="76">Á¶È¸¼ö</td>
+						<td align="center" width="76">ì¡°íšŒìˆ˜</td>
 						<td width="319"><%=hit%></td>
 						<td width="0">&nbsp;</td>
 					</tr>
@@ -63,7 +63,7 @@
 					</tr>
 					<tr>
 						<td width="0">&nbsp;</td>
-						<td align="center" width="76">ÀÌ¸§</td>
+						<td align="center" width="76">ì´ë¦„</td>
 						<td width="319"><%=name%></td>
 						<td width="0">&nbsp;</td>
 					</tr>
@@ -76,7 +76,7 @@
 					</tr>
 					<tr>
 						<td width="0">&nbsp;</td>
-						<td align="center" width="76">Á¦¸ñ</td>
+						<td align="center" width="76">ì œëª©</td>
 						<td width="319"><%=title%></td>
 						<td width="0">&nbsp;</td>
 					</tr>
@@ -105,9 +105,9 @@
 					</tr>
 					<tr align="center">
 						<td width="0">&nbsp;</td>
-						<td colspan="2" width="399"><input type=button value="±Û¾²±â"
-							OnClick="window.location='write.jsp'"><input type=button value="¸ñ·Ï"
-							OnClick="window.location='list.jsp'"><input type=button value="»èÁ¦" OnClick="window.location='delete.jsp?idx=<%=idx%>'">
+						<td colspan="2" width="399"><input type=button value="ê¸€ì“°ê¸°"
+							OnClick="window.location='write.jsp'"><input type=button value="ëª©ë¡"
+							OnClick="window.location='list.jsp'"><input type=button value="ì‚­ì œ" OnClick="window.location='delete.jsp?idx=<%=idx%>'">
 						<td width="0">&nbsp;</td>
 					</tr>
 				</table>
