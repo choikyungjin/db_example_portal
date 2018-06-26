@@ -1,4 +1,4 @@
-
+﻿
 <%
 	// 사용자 계정 정보를 관리하는 클래스와 메소드.
 %>
@@ -17,8 +17,7 @@
 			try {
 				ArrayList<Account> return_list = new ArrayList<Account>();
 				Class.forName("oracle.jdbc.driver.OracleDriver");
-				Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "test",
-						"test");
+				Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "","");
 				Statement stmt;
 
 				stmt = conn.createStatement();
@@ -45,8 +44,7 @@
 			try {
 				ArrayList<Account> return_list = new ArrayList<Account>();
 				Class.forName("oracle.jdbc.driver.OracleDriver");
-				Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "test",
-						"test");
+				Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "","");
 				Statement stmt;
 
 				stmt = conn.createStatement();
@@ -75,8 +73,7 @@
 				int rslt;
 
 				Class.forName("oracle.jdbc.driver.OracleDriver");
-				Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "test",
-						"test");
+				Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "","");
 
 				stmt = conn.createStatement();
 
@@ -98,8 +95,7 @@
 				int rslt;
 
 				Class.forName("oracle.jdbc.driver.OracleDriver");
-				Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "test",
-						"test");
+				Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "","");
 
 				stmt = conn.createStatement();
 

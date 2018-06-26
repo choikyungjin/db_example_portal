@@ -19,7 +19,7 @@ public  ArrayList<Course> get()
 		{ 
 			ArrayList<Course> return_list = new ArrayList<Course>();
 			Class.forName("oracle.jdbc.driver.OracleDriver");       
-			Connection conn=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","test","test");
+			Connection conn=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","","");
 	      
 			Statement stmt;
 			
@@ -57,7 +57,7 @@ public  ArrayList<Course> get()
 			int rslt;
 
 			Class.forName("com.mysql.jdbc.Driver");         
-			Connection conn=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","test","test");
+			Connection conn=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","","");
 	      
 			stmt = conn.createStatement(); 
 			
@@ -91,7 +91,7 @@ public  ArrayList<Course> get()
 			int rslt;
 
 			Class.forName("com.mysql.jdbc.Driver");         
-			Connection conn=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","test","test");
+			Connection conn=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","","");
 	      
 			stmt = conn.createStatement(); 
 			
@@ -119,7 +119,7 @@ public  ArrayList<Course> get()
 			int rslt;
 
 			Class.forName("com.mysql.jdbc.Driver");         
-			Connection conn=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","test","test");
+			Connection conn=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","","");
 
 			stmt = conn.createStatement(); 
 			

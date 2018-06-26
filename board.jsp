@@ -1,4 +1,4 @@
-<% //강의자료에 관한 클래스와 메소드들의 정의 %>
+﻿<% //강의자료에 관한 클래스와 메소드들의 정의 %>
 
 <%@ page import="java.sql.*" %>
 <%@ page import="java.util.*" %>
@@ -20,7 +20,7 @@ public class Board
 		{ 
 			ArrayList<Board> return_list = new ArrayList<Board>();
 			Class.forName("oracle.jdbc.driver.OracleDriver");         
-			Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "test","test");
+			Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "","");
 	      
 			Statement stmt;
 			
@@ -57,7 +57,7 @@ public class Board
 			int rslt;
 
 			Class.forName("oracle.jdbc.driver.OracleDriver");            
-			Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "test","test");
+			Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "","");
 	      
 			stmt = conn.createStatement(); 
 			System.out.println(board.cno + "', '" 
@@ -97,7 +97,7 @@ public class Board
 			int rslt;
 
 			Class.forName("oracle.jdbc.driver.OracleDriver");         
-			Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "test","test");
+			Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "","");
 	      
 			stmt = conn.createStatement(); 
 			
@@ -125,7 +125,7 @@ public class Board
 			int rslt;
 
 			Class.forName("oracle.jdbc.driver.OracleDriver");           
-			Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "test","test");
+			Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "","");
 
 			stmt = conn.createStatement(); 
 			

@@ -1,4 +1,4 @@
-
+﻿
 <%
 	// 메일 보내기
 %>
@@ -29,7 +29,7 @@
 
 
 <%
-	String sender = "ickz5563@gmail.com";
+	String sender = "";
 	String cno=request.getParameter("cno");
 	String subject = request.getParameter("title");
 	String receiver = request.getParameter("to");
@@ -56,7 +56,7 @@
 
 		ses = Session.getInstance(p, new Authenticator() {
 			protected PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication(sender, "!upujak258");
+				return new PasswordAuthentication(sender, "88");
 			}
 		});
 		ses.setDebug(true);
