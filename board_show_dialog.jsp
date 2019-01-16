@@ -28,8 +28,7 @@
 					chosen.contents = b.contents;
 				}
 				Class.forName("oracle.jdbc.driver.OracleDriver");
-				Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "test",
-						"test");
+				Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "","");
 
 				Statement stmt;
 
