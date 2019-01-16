@@ -13,8 +13,7 @@
 			try {
 				ArrayList<Course_Registration> return_list = new ArrayList<Course_Registration>();
 				Class.forName("oracle.jdbc.driver.OracleDriver");
-				Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "test",
-						"test");
+				Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "","");
 
 				Statement stmt;
 
@@ -39,8 +38,7 @@
 			try {
 				ArrayList<Course_Registration> return_list = new ArrayList<Course_Registration>();
 				Class.forName("oracle.jdbc.driver.OracleDriver");
-				Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "test",
-						"test");
+				Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "","");
 
 				Statement stmt;
 
